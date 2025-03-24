@@ -1,0 +1,108 @@
+*margin{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    font-size: 62.5%; 
+    scroll-behavior:smooth ;
+}
+
+
+
+body{
+    width: 100%;
+    height:100%;
+    background-color:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+    color: #0f0f0f;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding :1rem 5rem;
+}
+.logo{
+    font-size: 4.5rem;
+    color: orangered;
+    cursor: pointer;
+    transition: color 1s;
+    font-weight: 800;
+    transform: 0.3s;
+}
+.logo:hover{
+    color:#ff6347;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px orangered;
+
+}
+nav a{
+    position: relative;
+      color:white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -0.4px;
+    height: 2px;      
+background-color: orangered;
+     transition: width 0.3s;
+}
+nav a:hover{
+    background-color: blue;
+    color: white;
+}
+section{
+    padding:10rem 5rem;
+    min-height: 100vh;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    background-color: black;
+}
+.home.home-content h1{
+ font-size: 6rem;   
+ font-weight: 700;
+line-height: 1.3;
+}
+span{
+    color: brown;
+}
+.home-content h3{
+font-size: 4rem;
+margin-bottom: 1rem;
+font-weight: 700;
+}
+.home-img{
+    border-radius: 50%;
+}
+.home.home-img{
+    cursor: pointer;
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px orangered;
+    transition: 0.2s;
+
+}
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
